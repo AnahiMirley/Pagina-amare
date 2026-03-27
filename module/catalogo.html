@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo | Amaré</title>
+
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="../Css/catalogo.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="nav-principal">
+        <div class="nav-contenedor">
+
+            <a href="../index.html" class="nav-marca">
+                <img src="../Img/logo_amare.png" alt="Logo Amaré" class="nav-logo-img">
+                <span class="nav-nombre-marca">Amaré</span>
+            </a>
+
+            <button class="nav-icono-hamburguesa" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
+
+            <ul id="menu-mobile" class="nav-lista-enlaces">
+                <li><a href="../index.html" class="nav-enlace activo">Inicio</a></li>
+                <li><a href="../module/catalogo.html#anillos" class="nav-enlace">Anillos</a></li>
+                <li><a href="../module/catalogo.html#collares" class="nav-enlace">Collares</a></li>
+                <li><a href="../module/catalogo.html#pulseras" class="nav-enlace">Pulseras</a></li>
+                <li><a href="../module/novedades.html" class="nav-enlace">Novedades</a></li>
+                <li><a href="../module/contacto.php" class="nav-enlace">Contacto</a></li>
+            </ul>
+
+            <div class="nav-iconos-derecha">
+                <a href="#" title="Buscar">
+                    <svg class="nav-icono-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </a>
+                <a href="#" title="Bolsa de Compras" class="nav-contenedor-bolsa">
+                    <svg class="nav-icono-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    <span class="nav-contador-bolsa">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-catalogo">
+        <h1 class="titulo-catalogo">Nuestras Colecciones</h1>
+        <p>Explora la belleza artesanal en cada categoría.</p>
+    </header>
+
+    <main>
+
+        <section id="anillos" class="seccion-categoria-catalogo">
+            <div class="encabezado-categoria">
+                <h2>Anillos</h2>
+                <p>Compromiso, promesa y estilo eterno.</p>
+            </div>
+
+            <div class="grid-productos-catalogo">
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/prod_anillo_sol.jpg" alt="Anillo Sol">
+                        <span class="tag-nuevo">Nuevo</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Sol Radiante</h3>
+                        <p class="precio">$850</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/anillo_diamante.jpg" alt="Anillo Diamante">
+                    </div>
+                    <div class="card-info">
+                        <h3>Solitario Clásico</h3>
+                        <p class="precio">$1,200</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/anillo_zafiro.jpg" alt="Anillo Zafiro">
+                    </div>
+                    <div class="card-info">
+                        <h3>Zafiro Real</h3>
+                        <p class="precio">$980</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/anillo_oro.jpg" alt="Banda Oro">
+                    </div>
+                    <div class="card-info">
+                        <h3>Banda Eterna Oro</h3>
+                        <p class="precio">$650</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/anillo_perla.jpg" alt="Anillo Perla">
+                    </div>
+                    <div class="card-info">
+                        <h3>Perla del Mar</h3>
+                        <p class="precio">$540</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/anillo_rubi.jpg" alt="Anillo Rubi">
+                    </div>
+                    <div class="card-info">
+                        <h3>Corazón Rubí</h3>
+                        <p class="precio">$1,100</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/anillo_vintage.jpg" alt="Anillo Vintage">
+                        <span class="tag-oferta">-20%</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Corte Vintage</h3>
+                        <p class="precio"><del>$900</del> $720</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/anillo_minimal.jpg" alt="Anillo Minimal">
+                    </div>
+                    <div class="card-info">
+                        <h3>Línea Minimalista</h3>
+                        <p class="precio">$320</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr class="separador-elegante">
+
+        <section id="collares" class="seccion-categoria-catalogo">
+            <div class="encabezado-categoria">
+                <h2>Collares</h2>
+                <p>La elegancia cerca de tu corazón.</p>
+            </div>
+
+            <div class="grid-productos-catalogo">
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/prod_collar_esmeralda.jpg" alt="Collar Esmeralda">
+                    </div>
+                    <div class="card-info">
+                        <h3>Gota de Esmeralda</h3>
+                        <p class="precio">$7,000</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/prod_collar_plata.jpg" alt="Collar Plata">
+                    </div>
+                    <div class="card-info">
+                        <h3>Cadena Plata Fina</h3>
+                        <p class="precio">$6,000</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/collar_perlas.jpg" alt="Collar Perlas">
+                    </div>
+                    <div class="card-info">
+                        <h3>Perlas Cultivadas</h3>
+                        <p class="precio">$450</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/collar_luna.jpg" alt="Collar Luna">
+                    </div>
+                    <div class="card-info">
+                        <h3>Media Luna Oro</h3>
+                        <p class="precio">$580</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <hr class="separador-elegante">
+
+        <section id="pulseras" class="seccion-categoria-catalogo">
+            <div class="encabezado-categoria">
+                <h2>Pulseras</h2>
+                <p>Detalles sutiles que marcan la diferencia.</p>
+            </div>
+
+            <div class="grid-productos-catalogo">
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/prod_brazalete_sol.jpg" alt="Brazalete Sol">
+                    </div>
+                    <div class="card-info">
+                        <h3>Brazalete Solar</h3>
+                        <p class="precio">$5,000</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/pulsera_oro.jpg" alt="Pulsera Oro">
+                    </div>
+                    <div class="card-info">
+                        <h3>Eslabones de Oro</h3>
+                        <p class="precio">$2,500</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/pulsera_hilo.jpg" alt="Pulsera Roja">
+                    </div>
+                    <div class="card-info">
+                        <h3>Hilo del Destino</h3>
+                        <p class="precio">$150</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+
+                <article class="card-producto">
+                    <div class="card-img">
+                        <img src="../Img/pulsera_diamantes.jpg" alt="Pulsera Tenis">
+                    </div>
+                    <div class="card-info">
+                        <h3>Tenis Diamantes</h3>
+                        <p class="precio">$4,200</p>
+                        <button class="btn-card">Añadir</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-seccion">
+        <div class="footer-grid">
+            <div class="footer-columna">
+                <span class="footer-marca">Amaré.</span>
+                <p>Brilla con lo que te representa.</p>
+            </div>
+            <div class="footer-columna">
+                <h5>Cliente</h5>
+                <a href="../module/contacto.php" class="footer-enlace">Contacto</a>
+                <a href="#" class="footer-enlace">Términos y condiciones</a>
+            </div>
+            <div class="footer-columna">
+                <h5>Síguenos</h5>
+                <a href="https://www.instagram.com" class="footer-social-link">
+                    <svg class="footer-icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    Instagram
+                </a>
+                <a href="https://www.facebook.com" class="footer-social-link">
+                    <svg class="footer-icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                    Facebook
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/navegacion.js"></script>
+</body>
+
+</html>
