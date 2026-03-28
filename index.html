@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaré | Joyería</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="nav-principal">
+        <div class="nav-contenedor">
+
+            <a href="index.html" class="nav-marca">
+                <img src="img/logo_amare.png" alt="Logo Amaré" class="nav-logo-img">
+                <span class="nav-nombre-marca">Amaré</span>
+            </a>
+
+            <button class="nav-icono-hamburguesa" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
+
+            <ul id="menu-mobile" class="nav-lista-enlaces">
+                <li><a href="index.html" class="nav-enlace activo">Inicio</a></li>
+                <li><a href="module/catalogo.html#anillos" class="nav-enlace">Anillos</a></li>
+                <li><a href="module/catalogo.html#collares" class="nav-enlace">Collares</a></li>
+                <li><a href="module/catalogo.html#pulseras" class="nav-enlace">Pulseras</a></li>
+                <li><a href="module/novedades.html" class="nav-enlace">Novedades</a></li>
+                <li><a href="module/contacto.html" class="nav-enlace">Contacto</a></li>
+            </ul>
+
+            <div class="nav-iconos-derecha">
+                <a href="#" title="Buscar">
+                    <svg class="nav-icono-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </a>
+                <a href="#" title="Bolsa de Compras" class="nav-contenedor-bolsa">
+                    <svg class="nav-icono-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                    </svg>
+                    <span class="nav-contador-bolsa">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-seccion">
+        <div class="hero-texto-contenedor">
+            <h1 class="hero-titulo">Brilla con lo que <br>te representa</h1>
+            <p class="hero-subtitulo">Diseños únicos para momentos eternos</p>
+            <a href="module/catalogo.html" class="boton-primario">Ver Colección</a>
+        </div>
+        <div class="hero-fondo-img">
+            <img src="img/banner_principal.jpg" alt="Banner Joyería">
+        </div>
+    </header>
+
+    <main>
+        <section class="categorias-seccion">
+            <h2 class="titulo-general">Nuestras Categorías</h2>
+
+            <div class="categorias-grid">
+                <article class="categoria-tarjeta">
+                    <a href="module/catalogo.html#anillos">
+                        <img src="img/cat_anillos.jpg" alt="Anillos" class="categoria-img">
+                        <div class="categoria-overlay">
+                            <h3>Anillos</h3>
+                            <span>Ver más</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="categoria-tarjeta">
+                    <a href="module/catalogo.html#collares">
+                        <img src="img/cat_collares.jpg" alt="Collares" class="categoria-img">
+                        <div class="categoria-overlay">
+                            <h3>Collares</h3>
+                            <span>Ver más</span>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="categoria-tarjeta">
+                    <a href="module/catalogo.html#pulseras">
+                        <img src="img/cat_pulseras.jpg" alt="Pulseras" class="categoria-img">
+                        <div class="categoria-overlay">
+                            <h3>Pulseras</h3>
+                            <span>Ver más</span>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="colecciones" class="productos-seccion">
+            <div class="productos-cabecera">
+                <h2 class="titulo-general">Novedades Exclusivas</h2>
+                <a href="module/novedades.html" class="enlace-texto-dorado">Ver todo →</a>
+            </div>
+
+            <div class="productos-grid">
+                <article class="producto-tarjeta">
+                    <div class="producto-img-box">
+                        <img src="img/prod_brazalete_sol.jpg" alt="Brazalete Sol">
+                        <span class="producto-etiqueta">Nuevo</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Brazalete Sol</h3>
+                        <p class="producto-precio">$5,000</p>
+                        <button class="boton-agregar">Añadir a bolsa</button>
+                    </div>
+                </article>
+
+                <article class="producto-tarjeta">
+                    <div class="producto-img-box">
+                        <img src="img/prod_collar_esmeralda.jpg" alt="Collar Esmeralda">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Collar Esmeralda</h3>
+                        <p class="producto-precio">$7,000</p>
+                        <button class="boton-agregar">Añadir a bolsa</button>
+                    </div>
+                </article>
+
+                <article class="producto-tarjeta">
+                    <div class="producto-img-box">
+                        <img src="img/prod_collar_plata.jpg" alt="Collar Plata">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Collar Plata</h3>
+                        <p class="producto-precio">$6,000</p>
+                        <button class="boton-agregar">Añadir a bolsa</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="confianza-barra">
+            <div class="confianza-item">
+                <img src="img/icono_envio.png" alt="Icono Envío" class="confianza-icono">
+                <h4>Envíos Seguros</h4>
+                <p>A todo el país</p>
+            </div>
+            <div class="confianza-item">
+                <img src="img/icono_garantia.png" alt="Icono Garantía" class="confianza-icono">
+                <h4>Certificado</h4>
+                <p>Autenticidad garantizada</p>
+            </div>
+            <div class="confianza-item">
+                <img src="img/icono_regalo.png" alt="Icono Regalo" class="confianza-icono">
+                <h4>Empaque Regalo</h4>
+                <p>Listo para sorprender</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-seccion">
+        <div class="footer-grid">
+            <div class="footer-columna">
+                <span class="footer-marca">Amaré.</span>
+                <p>Brilla con lo que te representa.</p>
+            </div>
+            <div class="footer-columna">
+                <h5>Cliente</h5>
+                <a href="module/contacto.html" class="footer-enlace">Contacto</a>
+                <a href="#" class="footer-enlace">Términos y condiciones</a>
+            </div>
+            <div class="footer-columna">
+                <h5>Síguenos</h5>
+                <a href="https://www.instagram.com" class="footer-social-link">Instagram</a>
+                <a href="https://www.facebook.com" class="footer-social-link">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navegacion.js"></script>
+</body>
+
+</html>
