@@ -1,0 +1,175 @@
+.header-catalogo {
+  background-color: var(--color-beige-oscuro);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.titulo-catalogo {
+  font-family: var(--fuente-titulos);
+  font-size: 3rem;
+  color: var(--color-texto-negro);
+  margin-bottom: 10px;
+}
+
+.seccion-categoria-catalogo {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  scroll-margin-top: 100px;
+}
+
+.encabezado-categoria {
+  margin-bottom: 40px;
+  border-left: 4px solid var(--color-dorado);
+  padding-left: 20px;
+}
+
+.encabezado-categoria h2 {
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+  color: var(--color-texto-negro);
+  text-transform: uppercase;
+}
+
+.encabezado-categoria p {
+  color: var(--color-texto-gris);
+  font-style: italic;
+}
+
+.grid-productos-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card-producto {
+  background-color: var(--color-blanco);
+  border: 1px solid #eee;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-img {
+  position: relative;
+  height: 300px;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img img {
+  max-height: 85%;
+  max-width: 85%;
+  object-fit: contain;
+  transition: transform 0.5s;
+}
+
+.card-producto:hover .card-img img {
+  transform: scale(1.1);
+}
+
+.tag-nuevo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--color-texto-negro);
+  color: var(--color-blanco);
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.tag-oferta {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #d8000c;
+  color: var(--color-blanco);
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.card-info {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #f9f9f9;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--color-texto-negro);
+}
+
+.precio {
+  font-weight: bold;
+  color: var(--color-dorado);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.precio del {
+  color: #999;
+  font-size: 0.9rem;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.btn-card {
+  background: transparent;
+  border: 1px solid var(--color-texto-negro);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.btn-card:hover {
+  background-color: var(--color-texto-negro);
+  color: var(--color-blanco);
+}
+
+.separador-elegante {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .grid-productos-catalogo {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+
+  .titulo-catalogo {
+    font-size: 2.2rem;
+  }
+
+  .btn-card {
+    padding: 8px 10px;
+    font-size: 0.7rem;
+  }
+}
