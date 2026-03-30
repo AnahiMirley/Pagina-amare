@@ -6,6 +6,6 @@ Anahí Mirley Ñacato Oña,
 
 Anthony Ariel Jimenez Haro,
 
-
+Miguel Angel Nieto Herrera
 
 link de la pagina: https://anahimirley.github.io/Pagina-amare/
